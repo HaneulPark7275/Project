@@ -58,7 +58,8 @@
     text-transform: uppercase;
     padding: 10px 30px;
 }
-.topline ul li a:hover {
+.topline ul li a:hover,
+.topline ul li a.active {
     color: slategray;
     border-top: 5px slategray solid;
     padding-top: 20px;
