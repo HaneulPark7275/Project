@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 100px;
+    padding: 0 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,30 +16,50 @@
 #navbar .logo {
     color: #fff;
     font-weight: 1000;
-    font-size: 2em;
+    font-size: 2.5em;   
     text-decoration: none;
+    margin-right: 25px;
 }
 
-#navbar ul {
+.grayback ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
 }
-
-#navbar ul li {
+.grayback ul li {
     list-style: none;
-    font-weight: 700;
+    font-weight: 1000;
 }
-
-#navbar ul li a {
+.grayback ul li a {
     text-decoration: none;
     padding: 15px 25px;
     color: #fff;
     border-radius: 20px;
 }
-
-#navbar ul li a:hover,
-#navbar ul li a.active {
+.grayback ul li a:hover,
+.grayback ul li a.active {
     background: rgb(30, 30, 30);
+}
+
+.topline ul {
+    list-style-type: none;
+}
+.topline ul li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.topline ul li a {
+    color: aliceblue;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 30px;
+}
+.topline ul li a:hover {
+    color: slategray;
+    border-top: 5px slategray solid;
+    padding-top: 20px;
 }
