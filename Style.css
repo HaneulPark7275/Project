@@ -1,6 +1,6 @@
 body,html {
-    height: 100%;
     margin: 0;
+    height: 100%;
     font: 400 15px/1.8 "Lato", sans-serif;
 }
 
@@ -86,4 +86,36 @@ div {
 
 .content img {
     margin-right: 50px;
+}
+
+.objectbox {
+    position: absolute;
+    background-color: #111;
+    left: 0;
+    top: 40%;
+    padding: 20px 0 40px 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    word-spacing: 3px;
+}
+
+.objectbox h2 {
+    font-size: 40px;
+    font-weight: 900;
+}
+.objectbox p {
+    font-size:20px;
+    font-style: italic;
+}
+
+.content figure{
+    align-items: center;
+}
+.content b{
+    color: black;
+}
+
+.rule p{
+    margin-bottom:0;
 }
