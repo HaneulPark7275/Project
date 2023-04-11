@@ -21,6 +21,14 @@ html {
   height: 100%;
   font: 400 15px/1.8 "Lato", sans-serif;
 }
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/Yut2.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .center {
   position: absolute;
   top: 20%;
@@ -56,11 +64,12 @@ html {
 }
 
 .signup button {
+  color: white;
   border: none;
   margin-left: 40px;
   margin-top: 20px;
   width: 80%;
   height: 40px;
   border-radius: 40px;
-  background-color: rgb(255, 162, 0);
+  background-color: rgb(30, 30, 30);
 }
