@@ -7,7 +7,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="css/navbar.css" type="text/css" />
-    <link rel="stylesheet" href="css/Joinstyle.css" />
+    <link rel="stylesheet" href="css/Loginstyle.css" />
   </head>
   <body>
     <div id="navbar">
@@ -22,15 +22,7 @@
       </nav>
       <nav class="grayback">
         <ul>
-          <li>
-            <a
-              href="join.html"
-              style="padding: 10px 15px"
-              id="join"
-              class="active"
-              >Join</a
-            >
-          </li>
+
           <li>
             <a href="login.html" style="padding: 10px 15px" id="login">Login</a>
           </li>
@@ -39,16 +31,36 @@
     </div>
 
     <div class="center">
-      <form action="">
-        <div class="signup">
-          <h1>CREATE ACCOUNT</h1>
-          <input required type="text" placeholder="Name" />
-          <input required type="email" placeholder="Email" />
-          <input required type="password" placeholder="Password" />
-          <input required type="password" placeholder="Re-type password" />
-          <button>SIGN UP</button>
-        </div>
-      </form>
+      <h1>Sign up</h1>
+      <form action="post">
+        
+        <div class="txt_field">
+          <input type="text" required>
+          <span></span>
+          <label>Email</label>
+      </div>
+      <div class="txt_field">
+          <input type="text" required>
+          <span></span>
+          <label>Username</label>
+      </div>
+      <div class="txt_field">
+        <input type="password" required>
+        <span></span>
+        <label>Password</label>
+    </div>
+    <div class="txt_field">
+      <input type="password" required>
+      <span></span>
+      <label>Re-type password</label>
+  </div>
+      <div>
+          <input type="submit" value="Sign up">
+      </div> 
+      <div class="signup_link"> 
+    </div>
+  </form>
+      </div>
     </div>
   </body>
 </html>
