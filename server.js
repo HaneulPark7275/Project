@@ -10,21 +10,21 @@ app.listen(port, () => {
 });
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + "home.html");
+    res.sendFile(__dirname + "/client/home.html");
 });
 
 app.get('/Group 7', (req, res) => {
-    res.sendFile(__dirname + "home.html");
+    res.sendFile(__dirname + "/client/home.html");
 });
 
 app.get('/Home', (req, res) => {
-    res.sendFile(__dirname + "home.html");
+    res.sendFile(__dirname + "/client/home.html");
 });
 
 app.get('/Rule', (req, res) => {
-    res.sendFile(__dirname + "rule.html");
+    res.sendFile(__dirname + "/client/rule.html");
 });
 
 app.get('/login', (req, res) => {
-    res.sendFile(__dirname + "rule.html");
+    res.sendFile(__dirname + "/client/rule.html");
 });
