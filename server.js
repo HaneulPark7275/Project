@@ -6,7 +6,7 @@ app.use(express.static('client'));
 app.use(express.static('public'));
 
 app.listen(port, () => {
-    console.log('서버가 실행됩니다. http://localhost:${port}');
+    console.log(`서버가 실행됩니다. http://localhost:${port}`);
 });
 
 app.get('/', (req, res) => {
