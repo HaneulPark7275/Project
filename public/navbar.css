@@ -1,3 +1,13 @@
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
 #navbar {
     position: fixed;
     top: 0;
@@ -10,15 +20,82 @@
     box-sizing: border-box;
     z-index: 10000;
     background: black;
-    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+#navbar a {
+    text-decoration: none;
+}
+
+#navbar ul li {
+    list-style-type: none;
 }
 
 #navbar .logo {
     color: #fff;
     font-weight: 1000;
-    font-size: 2.5em;   
-    text-decoration: none;
+    font-size: 2.5em;
     margin-right: 25px;
+}
+
+.yutstyle ul li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.yutstyle ul li a {
+    color: aliceblue;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 25%;
+    /* backgrond animation */
+    background: linear-gradient(to right, orange 50%, rgba(122, 255, 255, 0) 50%) right;
+    background-size: 201% 100%;
+    transition: 0.5s ease-out;
+}
+
+.yutstyle ul li a:hover,
+.yutstyle ul li a.active {
+    background-position: left;
+}
+
+.yutstyle ul li a span {
+    display: inline-block;
+}
+
+.yutstyle ul li a:hover span {
+    animation: rotate 0.3s linear 1;
+}
+
+.yutstyle ul li a:hover span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.yutstyle ul li a:hover span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.yutstyle ul li a:hover span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.yutstyle ul li a:hover span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.yutstyle ul li a:hover span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.yutstyle ul li a:hover span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.yutstyle ul li a:hover span:nth-child(7) {
+    animation-delay: 0.6s;
 }
 
 .grayback ul {
@@ -27,40 +104,14 @@
     align-items: center;
     gap: 40px;
 }
-.grayback ul li {
-    list-style: none;
-    font-weight: 1000;
-}
+
 .grayback ul li a {
-    text-decoration: none;
-    padding: 15px 25px;
+    padding: 10px 15px;
     color: #fff;
     border-radius: 20px;
 }
+
 .grayback ul li a:hover,
 .grayback ul li a.active {
     background: rgb(30, 30, 30);
-}
-
-.topline ul {
-    list-style-type: none;
-}
-.topline ul li {
-    display: inline-block;
-    margin-right: 10px;
-    margin-top: 10px;
-}
-.topline ul li a {
-    color: aliceblue;
-    font-size: 1.5em;
-    font-weight: 700;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 10px 30px;
-}
-.topline ul li a:hover,
-.topline ul li a.active {
-    color: slategray;
-    border-top: 5px slategray solid;
-    padding-top: 20px;
 }
