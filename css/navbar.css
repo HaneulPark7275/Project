@@ -52,7 +52,7 @@
     padding: 10px 30px;
     border-radius: 25%;
     /* backgrond animation */
-    background: linear-gradient(to right, rgb(165, 119, 62), rgba(122, 255, 255, 0) 50%) right;
+    background: linear-gradient(to right, rgb(165, 119, 62) 50%, rgba(122, 255, 255, 0) 50%) right;
     background-size: 201% 100%;
     transition: 0.5s ease-out;
 }
