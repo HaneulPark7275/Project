@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/Style.css" type="text/css" />
     <link rel="stylesheet" href="css/navbar.css" type="text/css" />
     <link rel="stylesheet" href="css/slideShow.css" type="text/css" />
@@ -34,18 +38,21 @@
             </a>
           </li>
           <li>
-            <a href="#">
-              <p>Contact</p></a>
+            <a href="#"> <p>Contact</p></a>
           </li>
         </ul>
       </nav>
-      <nav class="grayback">
-        <ul>
-          <li>
-            <a href="login.html" id="login">Login</a>
-          </li>
+
+      <div class="dropdown">
+        <div class="profile"></div>
+        <div class="caret"></div>
+        <ul class="menu">
+          <div class="bigProfile"></div>
+          <div class="dropdown-divider"></div>
+          <li>welcome haeguri</li>
+          <li>로그아웃</li>
         </ul>
-      </nav>
+      </div>
     </div>
 
     <div class="slideshow-container">
@@ -58,11 +65,11 @@
       <div class="mySlides fade img3">
         <div id="title">Yut-Nori</div>
       </div>
-    
+
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    
+
     <div class="dotcontain">
       <span class="dot" onclick="currentSlide(1)"></span>
       <span class="dot" onclick="currentSlide(2)"></span>
@@ -245,10 +252,14 @@
     <footer>
       <div class="main">
         <div class="part1">
-          <img src="images/Yuticon.png" alt="">
+          <img src="images/Yuticon.png" alt="" />
         </div>
         <div class="part2">
-          <p>The game is a popular board game throughout Korea, and it is considered a <br> game of deep tradition.</p>
+          <p>
+            The game is a popular board game throughout Korea, and it is
+            considered a <br />
+            game of deep tradition.
+          </p>
           <div class="icons">
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-vk"></i>
@@ -260,11 +271,15 @@
       </div>
       <div class="hr"></div>
       <div class="last">
-        <p class="last1">Copyright 2023 Group 7 - Web Programming Course <br> Sejong University </p>
+        <p class="last1">
+          Copyright 2023 Group 7 - Web Programming Course <br />
+          Sejong University
+        </p>
         <p class="last2">All Rights Reserved</p>
       </div>
     </footer>
 
     <script src="js/slideShow.js"></script>
+    <script src="js/dropdown.js"></script>
   </body>
 </html>
