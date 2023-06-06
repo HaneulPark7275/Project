@@ -26,7 +26,6 @@ div {
 
 .bgimage-1 {
   position: relative;
-  opacity: 0.65;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -93,9 +92,6 @@ div {
   color: black;
 }
 
-.rule{
-  top: 10vh
-}
 .rule p {
   margin-bottom: 0;
 }
@@ -222,4 +218,15 @@ footer {
   color: #fff;
   font-size: 18px;
   margin-right: 47px;
+}
+
+.title {
+  position: absolute;
+  color: #fff;
+  font-size: 7vw;
+  font-weight: 900;
+  top: 17vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 5px 5px rgb(36, 36, 36);
 }
