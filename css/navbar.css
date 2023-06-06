@@ -1,0 +1,93 @@
+@keyframes Rotate {
+    0% {
+        transform: rotateX(360deg);
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 10000;
+    background: black;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+#navbar a {
+    text-decoration: none;
+}
+
+#navbar ul li {
+    list-style-type: none;
+}
+
+#navbar .logo {
+    color: #fff;
+    font-weight: 1000;
+    font-size: 2.5em;
+    margin-right: 25px;
+}
+
+.yutstyle ul li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.yutstyle ul li a {
+    color: aliceblue;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 25%;
+    /* backgrond animation */
+    background: linear-gradient(to top,
+            rgb(165, 119, 62) 50%,
+            rgba(122, 255, 255, 0) 50%) top;
+    background-size: 100% 200%;
+    transition: 0.5s ease-out;
+}
+
+.yutstyle ul li a:hover,
+.yutstyle ul li a.active {
+    background-position: bottom;
+    color: rgb(95, 57, 29);
+}
+
+.yutstyle ul li a p {
+    display: inline-block;
+    margin: 0;
+}
+
+.yutstyle ul li a:hover p {
+    animation: Rotate 0.5s linear 1;
+}
+
+.grayback ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.grayback ul li a {
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.grayback ul li a:hover,
+.grayback ul li a.active {
+    background: rgb(30, 30, 30);
+}

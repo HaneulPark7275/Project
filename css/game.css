@@ -1,0 +1,250 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/Yut2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.game,
+.message,
+.dice{
+    position: absolute;
+    background-color: rgba(60, 60, 60, 0.5);
+    backdrop-filter: blur(10px);
+    transform: translate(-50%, -50%);
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.game{
+    width: 800px;
+    height: 800px;
+    top:55%;
+    left: 30%;
+    
+}
+
+.message{
+    width: 600px;
+    height: 100px;
+    top: 18%;
+    left: 75%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 1000;
+}
+.message p{
+    margin-top: 25px;
+}
+
+.dice{
+    display: block;
+    width: 600px;
+    height: 650px;
+    left: 75%;
+    top: 63%;
+}
+
+.yut{
+    display: flex;
+    width: 400px;
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.yut div{
+    width: 25%;
+    height: 400px;
+    background-image: url(../images/front.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.yut .active{
+    background-image: url(../images/back.png);
+}
+.yut .yut4.active{
+    background-image: url(../images/back2.png);
+}
+.yut .yut4.nak{
+    position: relative;
+    left: 100px;
+    transform: rotate(20deg);
+}
+.yut .rotate{
+    animation: rotate 0.3s 3;
+}
+
+@keyframes rotate{
+    50%{
+        transform: rotateY(180deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+.yut,
+#roll,
+.rmals,
+.bmals{
+    background-color: rgba(105, 105, 105, 0.3);
+    backdrop-filter: blur(10px);
+    position: relative;
+    border: 3px solid white;
+    border-radius: 5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#roll{
+    background: none;
+    font-size: 15px;
+    font-weight: 1000;
+    color: white;
+    padding: 10px 20px;
+    transition: .3s;
+}
+
+#roll:hover{
+    color:rgb(60, 60, 60);
+    background-color: white;
+}
+
+.rmals,
+.bmals{
+    display: flex;
+    margin-top: 10px;
+    width: 550px;
+    height: 65px;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+
+.rmal,
+.bmal{
+    border-radius: 50%;
+    float: left;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: .3s;
+}
+.selectable{
+    cursor: pointer;
+    border: 5px solid white
+}
+
+.rmal{
+    background-image: url(../images/Red.png);
+}
+.bmal{
+    background-image: url(../images/Blue.png);
+}
+
+.step{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 5px solid dimgray;
+    border-radius: 50%;
+    transition: .3s;
+    transform: translate(-50%, -50%);
+}
+.step:hover{
+    background-color: dimgray;
+}
+
+.row6{
+    top: 715px;
+}
+
+.row5{
+    top: 590px;
+}
+
+.row4{
+    top: 465px;
+}
+
+.row3{
+    top: 340px;
+}
+
+.row2{
+    top: 215px;
+}
+
+.row1{
+    top: 90px;
+}
+
+.column6{
+    left: 715px;
+}
+
+.column5{
+    left: 590px;
+}
+
+.column4{
+    left: 465px;
+}
+
+.column3{
+    left: 340px;
+}
+
+.column2{
+    left: 215px;
+}
+
+.column1{
+    left: 90px;
+}
+
+.Row1{
+    top: 25%;
+}
+
+.Row2{
+    top: 38%;
+}
+
+.Row3{
+    top: 50%;
+}
+
+.Row4{
+    top: 63%;
+}
+
+.Row5{
+    top: 75%;
+}
+
+.Column1{
+    left: 25%;
+}
+
+.Column2{
+    left: 38%;
+}
+
+.Column3{
+    left: 50%;
+}
+
+.Column4{
+    left: 63%
+}
+
+.Column5 {
+    left: 75%;
+}
