@@ -1,11 +1,13 @@
 const express = require('express')
 const app = express()
+const cookieParser = require('cookie-parser')
 const login = require('./routes/login')
 const join = require('./routes/join')
 const port = 3000
 
 app.use(express.json())
 app.use(express.urlencoded({extended : false}))
+app.use(cookieParser())
 
 app.use(express.static('client'));
 app.use(express.static('public'));
@@ -13,25 +15,42 @@ app.use(express.static('public'));
 app.use('/', login)
 app.use('/join', join)
 
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/client/login.html');
-})
+//app.get('/', (req, res) => {
+//    res.sendFile(__dirname + '/client/login.html');
+//})
 
 app.get('/home', (req, res) => {
-    res.sendFile(__dirname + '/client/home.html');
+    if(req.cookies.user){
+        res.sendFile(__dirname + '/client/home.html');
+    }
+    else{
+        res.send("<script>alert('Please Log-in!');location.href='/';</script>");
+    }
 });
 
 app.get('/rule', (req, res) => {
-  res.sendFile(__dirname + '/client/rule.html');
-});
+    if(req.cookies.user){
+        res.sendFile(__dirname + '/client/rule.html');
+    }
+    else{
+        res.send("<script>alert('Please Log-in!');location.href='/';</script>");
+    }});
 
 app.get('/game', (req, res) => {
-    res.sendFile(__dirname + '/client/game.html');
-});
+    if(req.cookies.user){
+        res.sendFile(__dirname + '/client/game.html');
+    }
+    else{
+        res.send("<script>alert('Please Log-in!');location.href='/';</script>");
+    }});
 
 app.get('/contact', (req, res) => {
-    res.sendFile(__dirname + '/client/contact.html');
-});
+    if(req.cookies.user){
+        res.sendFile(__dirname + '/client/contact.html');
+    }
+    else{
+        res.send("<script>alert('Please Log-in!');location.href='/';</script>");
+    }});
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)

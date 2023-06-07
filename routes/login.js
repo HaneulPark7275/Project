@@ -1,11 +1,13 @@
 const express = require('express');
 const router = require('express').Router();
 const path = require('path');
+const cookieParser = require('cookie-parser')
 const join = require('./join');
 
 app = express()
 app.use(express.json());
 app.use(express.urlencoded({extended : false}));
+app.use(cookieParser());
 
 app.use('/join', join);
 
@@ -17,6 +19,19 @@ var db = mysql.createConnection({
     database: 'my_db', 
 });
 db.connect();
+
+//111111
+router.get('/', function(req, res, next) {
+    console.log(req.cookies.user)
+    if(req.cookies.user){
+        res.send("<script>alert('Already Log-in!');location.href='/home';</script>");
+    }
+    else{
+        console.log('not login');
+        res.sendFile(path.join(__dirname, '../client/login.html'));
+    }
+});
+//111111111111
 
 router.get('/join',(req,res)=>{
     res.sendFile(path.join(__dirname, '../client/join.html'));
@@ -30,7 +45,12 @@ router.post('/',(req,res,next)=>{
             console.log(err)
         if(row.length > 0){
             if(param[1] == row[0].password){
-                res.sendFile(path.join(__dirname, '../client/home.html'))
+                console.log('Login Success')
+                res.cookie("user", row[0].id , {
+                    expires: new Date(Date.now() + 900000),
+                    secure: false
+                });
+                res.redirect("/home");
             }
             else{
                 console.log('Wrong Password')
