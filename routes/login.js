@@ -29,8 +29,13 @@ router.post('/',(req,res,next)=>{
         if(err)
             console.log(err)
         if(row.length > 0){
-            //ID exist
-            res.sendFile(path.join(__dirname, '../client/home.html'))
+            if(param[1] == row[0].password){
+                res.sendFile(path.join(__dirname, '../client/home.html'))
+            }
+            else{
+                console.log('Wrong Password')
+                res.send("<script>alert('wrong ID or password!');location.href='/';</script>");
+            }
         }else{
             console.log('ID does not exist')
             res.send("<script>alert('wrong ID or password!');location.href='/';</script>");
