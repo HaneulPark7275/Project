@@ -18,7 +18,10 @@ figure {
   min-height: 600px;
   overflow: hidden;
   position: relative;
-  background: rgb(165, 119, 62);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/Yut2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 figure section {
