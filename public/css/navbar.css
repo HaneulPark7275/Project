@@ -1,0 +1,170 @@
+@keyframes Rotate {
+  0% {
+    transform: rotateX(360deg);
+  }
+
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 10000;
+  background: black;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+#navbar a {
+  text-decoration: none;
+}
+
+#navbar ul li {
+  list-style-type: none;
+}
+
+#navbar .logo {
+  color: #fff;
+  font-weight: 1000;
+  font-size: 2.5em;
+  margin-right: 25px;
+}
+
+.yutstyle ul li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.yutstyle ul li a {
+  color: aliceblue;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border-radius: 25%;
+  /* backgrond animation */
+  background: linear-gradient(
+      to top,
+      rgb(165, 119, 62) 50%,
+      rgba(122, 255, 255, 0) 50%
+    )
+    top;
+  background-size: 100% 200%;
+  transition: 0.5s ease-out;
+}
+
+.yutstyle ul li a:hover,
+.yutstyle ul li a.active {
+  background-position: bottom;
+  color: rgb(95, 57, 29);
+}
+
+.yutstyle ul li a p {
+  display: inline-block;
+  margin: 0;
+}
+
+.yutstyle ul li a:hover p {
+  animation: Rotate 0.5s linear 1;
+}
+.dropdown {
+  margin-top: 10px;
+  position: relative;
+  display: inline-block;
+  min-width: 15em;
+  height: 30px;
+}
+.dropdown * {
+  box-sizing: border-box;
+}
+.profile {
+  background-color: white;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-right: 20px;
+
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0px;
+}
+.caret {
+  display: inline-block;
+
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+
+  /* make design */
+  width: 0px;
+  height: 0px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 7px solid #fff;
+
+  transition: 0.3s;
+}
+
+.caret-rotate {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.menu {
+  list-style: none;
+  padding: 0.2em 0.5em;
+  background: #323741;
+  border: 1px #363a43 solid;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+  color: #9fa5b5;
+  position: absolute;
+  top: 3em;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+  z-index: 1;
+}
+.menu .bigProfile {
+  background: #fff;
+  display: block;
+  width: 12em;
+  height: 12em;
+  border-radius: 100%;
+  margin: 1em;
+}
+.dropdown-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: block;
+  height: 0;
+}
+.menu li {
+  padding: 0.7em 0.5em;
+  margin: 0.3em 0;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+.menu li:hover {
+  background: #2a2d35;
+}
+.menu-open {
+  display: block;
+  opacity: 1;
+}
