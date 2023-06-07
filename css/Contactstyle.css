@@ -11,7 +11,21 @@ ol,
 li {
   list-style: none;
 }
-
+#haneulPic {
+  background-image: url("../images/haneul_pic.png");
+}
+#haedongPic {
+  background-image: url("../images/haedong_pic.jpeg");
+}
+#soonhyeongPic {
+  background-image: url("../images/soonhyeong_pic.png");
+}
+#muhammadPic {
+  background-image: url("../images/muhammad_pic.png");
+}
+#sanjarPic {
+  background-image: url("../images/sanjar_pic.png");
+}
 figure {
   width: 100%;
   height: 100vh;
@@ -69,12 +83,13 @@ figure section article .inner .pic {
   margin: 0px auto;
   border-radius: 50%;
   background-repeat: no-repeat;
-  background-position: 200%;
+  background-size: cover;
+  background-position: 100%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  /* background-color: black; */
 }
 
 figure section article .inner .txt {
@@ -124,18 +139,12 @@ section ul.contact {
 section ul.contact li {
   width: 100%;
   padding: 10px 0px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #444;
 }
 section ul.contact li:last-child {
   border-bottom: none;
 }
-section ul.contact li i {
-  width: 20%;
-  text-align: center;
-  color: #555;
-  font-size: 15px;
-  text-shadow: 2px 2px 2px #ddd;
-}
+
 section ul.contact li span {
   font-weight: normal;
   font-size: 11px;
