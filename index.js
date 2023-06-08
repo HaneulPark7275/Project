@@ -48,9 +48,35 @@ app.get('/contact', (req, res) => {
     if(req.cookies.user){
         res.sendFile(__dirname + '/client/contact.html');
     }
-    else{
+    else{   
         res.send("<script>alert('Please Log-in!');location.href='/';</script>");
     }});
+
+app.post('/home',(req,res) => {
+    console.log("log out!");
+    res.clearCookie('user');    
+    res.redirect('/');
+})
+app.post('/rule',(req,res) => {
+    console.log("log out!");
+    res.clearCookie('user');    
+    res.redirect('/');
+})
+app.post('/game',(req,res) => {
+    console.log("log out!");
+    res.clearCookie('user');    
+    res.redirect('/');
+})
+app.post('/contact',(req,res) => {
+    console.log("log out!");
+    res.clearCookie('user');    
+    res.redirect('/');
+})
+app.post('/home',(req,res) => {
+    console.log("log out!");
+    res.clearCookie('user');    
+    res.redirect('/');
+})
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)

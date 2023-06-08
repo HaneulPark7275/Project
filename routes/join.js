@@ -28,7 +28,7 @@ router.post('/',(req,res,next)=>{
         db.query('INSERT INTO Users(`email`,`id`,`password`) VALUES (?,?,?)', param, (err, row) =>{
             if(err) {
                 console.log(err)
-                res.send("<script>alert('use differnt username!');location.href='/join';</script>");
+                res.send("<script>alert('use differnt username!');location.href='/';</script>");
             }
             else{
                 res.send("<script>alert('sign in finish!');location.href='/';</script>");

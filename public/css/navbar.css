@@ -87,7 +87,12 @@
 .dropdown * {
   box-sizing: border-box;
 }
+.dropdown button{
+  border:none;
+  background-color: none;
+}
 .profile {
+  background-image: url('/images/avatar.svg');
   background-color: white;
   display: inline-block;
   width: 30px;
@@ -143,7 +148,7 @@
   z-index: 1;
 }
 .menu .bigProfile {
-  background: #fff;
+  background-image: url('/images/avatar.svg');
   display: block;
   width: 12em;
   height: 12em;
@@ -167,4 +172,11 @@
 .menu-open {
   display: block;
   opacity: 1;
+}
+
+.bigProfile,
+.profile{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
 }

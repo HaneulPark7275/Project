@@ -113,11 +113,7 @@ figure section article .inner .txt h2 {
   color: #bbb;
   margin-bottom: 30px;
 }
-figure section article .inner .txt p {
-  font-size: 20px;
-  margin-bottom: 3vh;
-  color: #777;
-}
+
 section a.btnView {
   display: block;
   width: 180px;
