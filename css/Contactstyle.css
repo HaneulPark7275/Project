@@ -68,9 +68,9 @@ figure section article .inner {
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 
-  opacity: 0.6; /*투명도를 낮춰서 비활성화*/
-  transform: scale(0.8); /*축소시켜서 비솰성화*/
-  transition: opacity 1s, transform 1s; /* 7단계 */
+  opacity: 0.6;
+  transform: scale(0.8);
+  transition: opacity 1s, transform 1s;
 }
 figure section article.on .inner {
   opacity: 0.9;
@@ -85,10 +85,6 @@ figure section article .inner .pic {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   /* background-color: black; */
 }
 
@@ -113,11 +109,7 @@ figure section article .inner .txt h2 {
   color: #bbb;
   margin-bottom: 30px;
 }
-figure section article .inner .txt p {
-  font-size: 20px;
-  margin-bottom: 3vh;
-  color: #777;
-}
+
 section a.btnView {
   display: block;
   width: 180px;
@@ -133,9 +125,6 @@ section a.btnView {
   text-align: center;
 }
 
-section ul.contact {
-  margin-bottom: 25px;
-}
 section ul.contact li {
   width: 100%;
   padding: 10px 0px;
@@ -166,7 +155,7 @@ figure .btnPrev {
   cursor: pointer;
 }
 figure .btnPrev span {
-  font: 11px/1 "arial";
+  font: 11px "arial";
   color: #fff;
   opacity: 1;
   transform: translateX(30%);

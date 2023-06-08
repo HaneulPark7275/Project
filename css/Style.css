@@ -2,7 +2,7 @@ body,
 html {
   margin: 0;
   height: 100%;
-  font: 400 15px/1.8 "Lato", sans-serif;
+  /* font: 400 15px/1.8 "Lato", sans-serif; */
 }
 
 div {
@@ -93,8 +93,8 @@ div {
   color: black;
 }
 
-.rule{
-  top: 10vh
+.rule {
+  top: 10vh;
 }
 .rule p {
   margin-bottom: 0;
@@ -149,7 +149,6 @@ footer {
   display: flex;
   margin-left: 200px;
   margin-top: 20px;
-
 }
 
 .licol {
@@ -167,16 +166,15 @@ footer {
   color: #fff;
   margin-left: 20px;
   font-size: 24px;
-  transition: .3s;
+  transition: 0.3s;
 }
-
 
 .fa-twitter:hover {
   color: #00acee;
 }
 
 .fa-vk:hover:hover {
-  color: #4C75A3;
+  color: #4c75a3;
 }
 
 .fa-telegram:hover:hover {
@@ -186,8 +184,13 @@ footer {
 .fa-instagram:hover:hover {
   overflow: hidden;
   background: rgb(131, 58, 180);
-  transition: .3s;
-  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  transition: 0.3s;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
 }
 
 .fa-youtube:hover {
