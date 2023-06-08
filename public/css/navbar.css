@@ -87,9 +87,11 @@
 .dropdown * {
   box-sizing: border-box;
 }
-.dropdown button{
+
+.dropdown ul li form button{
   border:none;
-  background-color: none;
+  background-color: transparent;
+  
 }
 .profile {
   background-image: url('/images/avatar.svg');
