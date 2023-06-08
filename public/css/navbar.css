@@ -89,8 +89,9 @@
 }
 
 .dropdown ul li form button{
-  border:none;
-  background-color: transparent;
+  
+    appearance: none;
+    background-color: transparent; 
   
 }
 .profile {

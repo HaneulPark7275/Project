@@ -10,29 +10,21 @@ div {
 }
 
 .bgimage-1 {
-  background-image: url(../images/Yut2.jpg);
+  background-image: url(/images/Yut2.jpg);
   min-height: 100%;
 }
 .bgimage-2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/Yut1.jpg);
+    url(/images/Yut1.jpg);
   height: 90%;
 }
 .bgimage-3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/Yut3.jpg);
+    url(/images/Yut3.jpg);
   min-height: 90%;
 }
 
-.bgimage-1 {
-  position: relative;
-  opacity: 0.65;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
+.bgimage-1,
 .bgimage-2,
 .bgimage-3 {
   position: relative;
@@ -222,4 +214,15 @@ footer {
   color: #fff;
   font-size: 18px;
   margin-right: 47px;
+}
+
+.title {
+  position: absolute;
+  color: #fff;
+  font-size: 7vw;
+  font-weight: 900;
+  top: 17vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 5px 5px rgb(36, 36, 36);
 }

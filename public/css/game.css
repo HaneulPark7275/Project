@@ -18,17 +18,16 @@ body{
 }
 
 .game{
-    width: 800px;
-    height: 800px;
-    top:55%;
-    left: 30%;
-    
+    width: 740px;
+    height: 740px;
+    top:54%;
+    left: 34%;
 }
 
 .message{
-    width: 600px;
-    height: 100px;
-    top: 18%;
+    width: 450px;/*<<<<<<< */
+    height: 75px;
+    top: 16%;
     left: 75%;
     text-align: center;
     color: white;
@@ -36,15 +35,15 @@ body{
     font-weight: 1000;
 }
 .message p{
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 .dice{
     display: block;
-    width: 600px;
+    width: 450px;/*<<<<<<< */
     height: 650px;
-    left: 75%;
-    top: 63%;
+    left:75%;
+    top: 59%;
 }
 
 .yut{
@@ -116,7 +115,7 @@ body{
 .bmals{
     display: flex;
     margin-top: 10px;
-    width: 550px;
+     width: 400px; /*<<<<<<< */
     height: 65px;
     padding: 0 10px;
     justify-content: space-between;
@@ -150,8 +149,8 @@ body{
 
 .step{
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     border: 5px solid dimgray;
     border-radius: 50%;
     transition: .3s;
@@ -162,51 +161,51 @@ body{
 }
 
 .row6{
-    top: 715px;
+    top: 90%;
 }
 
 .row5{
-    top: 590px;
+    top: 74%;
 }
 
 .row4{
-    top: 465px;
+    top: 58%;
 }
 
 .row3{
-    top: 340px;
+    top: 42%;
 }
 
 .row2{
-    top: 215px;
+    top: 26%;
 }
 
 .row1{
-    top: 90px;
+    top: 10%;
 }
 
 .column6{
-    left: 715px;
+    left: 90%;
 }
 
 .column5{
-    left: 590px;
+    left: 74%;
 }
 
 .column4{
-    left: 465px;
+    left: 58%;
 }
 
 .column3{
-    left: 340px;
+    left: 42%;
 }
 
 .column2{
-    left: 215px;
+    left: 26%;
 }
 
 .column1{
-    left: 90px;
+    left: 10%;
 }
 
 .Row1{
